@@ -77,22 +77,3 @@ scrollToTopButton.onclick = function(event) {
 
 
 
-
-
-  document.addEventListener("DOMContentLoaded", function() {
-    const text = document.getElementById("animated-text");
-    const words = text.innerText.split(" ");
-    text.innerText = "";
-    let index = 0;
-
-    function showNextWord() {
-      if (index < words.length) {
-        text.innerText += words[index] + " ";
-        index++;
-        setTimeout(showNextWord, 300); // 300ms delay between each word
-      }
-    }
-
-    showNextWord();
-  });
-
